@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+Name: Nima Ostadkar
+Date Created: 2/22/2019
+Most recent revision: NA
+-->
+
+<html lang ="en">
+	<head>
+		<title> Home Page </title>
+	</head>
+	
+	<body>
+		<main>
+			<header>
+				
+				<h1 style="text-align:center">Ava's Pizzeria</h1>
+			</header>
+			
+			<nav style="font-size: 12pt">
+				<hr />
+				<p><a href="index.html">Home</a> 
+				<a href="menu.html">Menu</a>
+				<a href="contactus.html">Contact Us</a></P>
+				<hr />
+			</nav>
+		
+			<section style="text-align:center;">
+				<article id="contact-us">
+					<h2>Contact Us</h2>
+					
+					<form action="contact.html" method="POST" style="display: table; margin: 0 auto; width: 600px;">
+						
+						<p style="display: table-row;">
+						<label style="display:table-cell; text-align:right;">Name:</label> 
+						<input type="text" name="nameInput" style="display: table-cell; width: 300px;" required/>
+						</p>
+						<br/>
+						
+						<p style="display: table-row;">
+						<label style="display:table-cell; text-align:right;">Email:</label> 
+						<input type="text" name="emailInput" style="display: table-cell; width: 300px;" required/>
+						</p>
+						<br/>
+						
+						<p style="display: table-row;">
+						<label style="display:table-cell; text-align:right;">Phone:</label> 
+						<input type="text" name="phoneInput" style="display: table-cell; width: 300px;" required/>
+						</p>
+						<br/>
+						
+						<p style="display: table-row; ">
+						<label style="display:table-cell; text-align:right;">Reason for Inquiry:</label> 
+						<select name="reasonInquiry" style="display: table-cell; width: 302px;">
+							<option value="Catering">Catering</option>
+							<option value="PrivateParty">Private Party</option>
+							<option value="Feedback">Feedback</option>
+							<option value="Other">Other</option>
+						</select>
+						</p>
+						<br/>
+						
+						<p style="display: table-row;">
+						<label style="display:table-cell; text-align:right; vertical-align: top; ">Additional Information:</label> 
+						<textarea name="additionalinfoInput" style="display: table-cell; width: 300px; height: 150px;"></textarea>
+						</p>
+						<br/>
+					
+						<p style="display: table-row;">
+						<label style="display:table-cell; text-align:right; vertical-align: top; ">Have you been to the restaurant?</label> 
+						<label style="display:table-cell; text-align: left; padding-left:25px;">
+							<input type="radio" name="answer" value="NO" />No
+							<input type="radio" name="answer" value="YES" />Yes
+						</label>
+						</p>
+						<br/>
+					
+						<p style="display: table-row;">
+						<label style="display:table-cell; text-align:right; vertical-align: top; ">Best days to contact you:</label> 
+						<label style="display:table-cell; text-align: left; padding-left:25px;">
+							<input type="checkbox" name="contactDays" value="Monday" />M
+							<input type="checkbox" name="contactDays" value="Tuesday" />T
+							<input type="checkbox" name="contactDays" value="Wendsday" />W
+							<input type="checkbox" name="contactDays" value="Thursday" />Th
+							<input type="checkbox" name="contactDays" value="Friday" />F
+						</label>
+						</p>
+						<br/>
+						
+						<p style="display: table-row;">
+						<label style="display:table-cell; text-align:right; vertical-align: top; "></label> 
+						<input type="submit" value="Send Request"/>
+						</p>
+					
+				</article>
+			</section>
+			
+			<footer style="text-align:center; width: 100%; bottom: 0; position: fixed;">
+				<hr />
+				<p> 12345 Make Shift Drive, Eden Prairie, MN 55444 </p>
+				<p> 952-222-2222 </p>
+			</footer>
+			
+		</main>
+		
+		
+	</body>
+	
+</html>

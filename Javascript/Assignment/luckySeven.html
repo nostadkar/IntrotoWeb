@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+	Name: Nima Ostadkar
+	Date Created: 3/23/2019
+	Most recent revision: 1/18/2019
+-->
+<html>
+<head>
+    <script type="text/JavaScript" src="luckySeven.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <h1>Lucky Sevens</h1>
+    <form name="luckySeven" onsubmit="return validateItems();" 
+          onreset="resetForm();" class="form-inline">
+            <div class="form-group">
+                <label for="startingBet">Starting bet:</label>
+                <input type="number" class="form-control" id="startingBet">
+            </div>    
+            <button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+            <button type="reset" id="resetButton" class="btn">Reset</button>
+    </form>
+    <table id="results" class="table table-striped" style="display:none;">
+        <thead>
+            <tr>
+                <th>Result</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Starting Bet </td>
+                <td><span id="startingBetResult"></span></td>
+            </tr>
+            <tr>
+                <td>Total Rolls Before Going Broke</td>
+                <td><span id="rollCountResult"></span></td>
+            </tr>
+            <tr>
+                <td>Highest Amount Won</td>
+                <td><span id="maxSumResult"></span></td>
+            </tr>
+            <tr>
+                <td>Roll Count at Hightest Amount Won</td>
+                <td><span id="rollCountAtMaxSumResult"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

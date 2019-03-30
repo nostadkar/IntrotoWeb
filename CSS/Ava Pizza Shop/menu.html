@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--
+Name: Nima Ostadkar
+Date Created: 2/22/2019
+Most recent revision: NA
+-->
+
+<html lang ="en">
+	<head>
+		<title> Home Page </title>
+		<link href="restaurantStyles.css" rel="stylesheet" type "text/css" />
+		<style>
+		section {
+		background-color: #E7B7AD
+		}
+		
+		.nav {
+		font-size: 20pt;
+		}
+
+		#menu td {
+		line-height: 1px;
+		vertical-align: text-top; 
+		width: 350px;
+		border: 3px solid red;
+		}
+		
+		#cost {
+		font-style: italic;
+		}
+		
+		#menu {
+		text-align: center;
+		}
+		
+		#menu table {
+		width: 100%;
+		text-align: center;
+		}
+		
+		article h2 {
+		text-decoration: underline;
+		text-align: center;
+		}
+		
+		thead td {
+		font-weight: bold;
+		font-size: 1.2em;
+		text-align: left;
+		}
+		
+		thead th {
+		text-align: left;
+		}
+		
+		#beverages table, #beverages tr {
+		border: 3px solid red;
+		border-collapse: collapse;
+		padding: 5px 10px;
+		}
+		
+		#beverages tc {
+		border: none;
+		}
+		
+		
+		#beverages table {
+		width: 90%;
+		margin: auto;
+		}
+		
+		#beverages th {
+		background-color: #B21F28;
+		}
+		
+		#beverages tr:nth-child(odd) {
+		background-color: #e4c3ad;
+		}
+		
+		</style>
+	</head>
+	
+	<body>
+		<main>
+			<header>
+				<h1>Ava's Pizzeria</h1>
+			</header>
+			
+			<nav class="nav">
+				<hr />
+				<p>
+				<a href="index.html">Home</a> 
+				<a href="menu.html">Menu</a>
+				<a href="contactus.html">Contact Us</a>
+				</p>
+				<hr />
+			</nav>
+		
+			<section>
+				<article id="menu" class="menu">
+					<h2>Menu</h2>
+					<table>
+						<tr>
+							<td>
+								<h3>Ava's House Special</h3>
+								<p>Sausage</p>
+								<p>Pepperoni</p>
+								<p>Mushrooms</p>
+								<p>Green Peppers</p>
+								<p>Onions and Green Olives</p>
+								<p id="cost">$17.99</p>
+							</td>
+							<td>
+								<h3>The Hammer</h3>
+								<p>Sausage</p>
+								<p>Banana Peppers</p>
+								<p>Sauerkraut</p>
+								<p id="cost">$15.99</p>
+							</td>
+							<td>
+								<h3>Bacon Cheeseburger</h3>
+								<p>Hamburger</p>
+								<p>Bacon</p>
+								<p>Onions </p>
+								<p>Pickles </p>
+								<p>Cheddar and Mozzarella Cheese</p>
+								<p id="cost">$15.99</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3><b>Buffalo Chicken</b></h3>
+								<p>Buffalo Sause</p>
+								<p>Chicken</p>
+								<p>Onions</p>
+								<p>Blue Cheese</p>
+								<p id="cost"><i>$13.99</i></p>
+							</td>
+							<td>
+								<h3><b>Veggie</b></h3>
+								<p>Green Peppers</p>
+								<p>Onions</p>
+								<p>Mushrooms</p>
+								<p>Green Olives and Black Olives</p>
+								<p id="cost"><i>$14.99</i></p>
+							</td>
+							<td>
+								<h3><b>Hawaiian</b></h3>
+								<p>Canadian Bacon</p>
+								<p>Pineapple</p>
+								<p id="cost">$10.99</p>
+							</td>
+						</tr>
+					</table>						
+				</article>
+				
+				<article id="beverages" class ="beverages">
+					<h2>Beverages </h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Beverages</th>
+								<th>Cost</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Root Beer</td>
+								<td id="cost">$3.00</td>
+							</tr>
+							
+							<tr>
+								<td>Bottled Water</td>
+								<td id="cost">$1.25</td>
+							</tr>
+							
+							<tr>
+								<td>Lemonade</td>
+								<td id="cost">$1.00</td>
+							</tr>
+							
+							<tr>
+								<td>Iced Tea</td>
+								<td id="cost">$1.25</td>
+							</tr>
+							
+							
+						</tbody>
+					
+					</table>
+				
+				</article>
+			</section>
+			
+			
+			<footer>
+				<hr />
+				<p> 12345 Make Shift Drive, Eden Prairie, MN 55444 </p>
+				<p> 952-222-2222 </p>
+			</footer>
+			
+		</main>
+
+		
+	</body>
+
+</html>

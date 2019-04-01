@@ -1,0 +1,67 @@
+header {
+	background-color: red;
+	color:white;
+	text-align:center;
+	font-family: cursive;
+}
+
+footer {
+	background-color: red;
+	color:white;
+	text-align:center;
+	width: 100%; 
+	bottom: 0; 
+	position: fixed;
+	border-top: thin black solid;
+	padding-top: 10px;
+
+}
+
+body {
+	background-color: #FF937C
+}
+
+a {
+	font-family: cursive;
+	text-decoration: underline;
+	font-weight: none;
+}
+
+a:link {
+	color: green;
+}
+
+a:visited {
+	color: red;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+nav {
+	font-size: 20pt;
+	color: red;
+	border-top: thin black solid;
+	border-bottom: thin black solid;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+nav .btn {
+	background-color: red;
+	color: white;
+	padding-right: 15px;
+}
+
+div .carousel-inner {
+	text-align:center;
+	width: 100%;
+	font-weight: bold;
+	
+}
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+Name: Nima Ostadkar
+Date Created: 3/30/2019
+Most recent revision: NA
+-->
+
+<html lang ="en">
+	<head>
+		<title> Home Page </title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="css/restaurantStyles.css" rel="stylesheet" type "text/css" />
+		<script type="text/javascript" src="js/loggingContact.js"></script>
+		<style>
+		.nav {
+		font-size: 20pt;
+		}
+		
+
+		</style>
+		<noscript>your browser session doesn't have JavaScript enabled. The site is best viewed with JavaScript enabled</noscript>
+	</head>
+	
+	<body>
+		<main>
+			<header class="jumbotron" style="background-color: red; padding-top: 1rem; padding-bottom: 1rem">
+				
+					<h1>Ava's Pizzeria</h1>
+					<p> Ava's Pizzeria is opening a new location! </p>
+				
+			</header>
+			
+			<nav class="nav">
+				<a class="btn badge-pill col-sm" href="index.html">Home</a> 
+				<a class="btn badge-pill col-sm" href="menu.html">Menu</a>
+				<a class="btn badge-pill col-sm" href="contactus.html">Contact Us</a>
+			</nav>
+		
+			<section>
+				<article  id="contact-us">
+					<br/>
+					<h2 class="col" style="text-align: center">Contact Us</h2>
+					<br/>
+					<form name="contactUs" onsubmit="return submitContactInfo();" class="form">
+							
+							<div class="form-group row">
+								<div class="col-sm-2"></div>
+								<label for="nameInput" class="col-sm-2 col-form-label">Name:</label> 
+								<div class="col-sm-6">
+									<input type="text" class="form-control" name="nameInput" required/>
+								</div>
+								<div class="col-sm-2"></div>
+							</div>
+							
+							
+							<div class="form-group row">
+								<div class="col-sm-2"></div>
+								<label for="emailInput" class="col-sm-2 col-form-label">Email:</label> 
+								<div class="col-sm-6 col-lg-6">
+									<input type="email" class="form-control" name="emailInput" required/>
+								</div>
+								<div class="col-sm-2"></div>
+							</div>
+							
+							
+							<div class="form-group row">
+								<div class="col-sm-2"></div>
+								<label for="phoneInput" class="col-sm-2 col-form-label">Phone:</label> 
+								<div class="col-sm-6">
+									<input type="text" class="form-control" name="phoneInput" required/>
+								</div>
+								<div class="col-sm-2"></div>
+							</div>
+							
+							
+							<div class="form-group row">
+								<div class="col-sm-2"></div>
+								<label for="reasonInquiry" class="col-sm-2 col-form-label">Reason for Inquiry:</label> 
+								<div class="col-sm-6">
+									<select class="form-control" name="reasonInquiry">
+										<option value="Catering">Catering</option>
+										<option value="PrivateParty">Private Party</option>
+										<option value="Feedback">Feedback</option>
+										<option value="Other">Other</option>
+									</select>
+								</div>
+								<div class="col-sm-2"></div>
+							</div>
+							
+							
+							<div class="form-group row">
+								<div class="col-sm-2"></div>
+								<label for="additionalinfoInput" class="col-sm-2 col-form-label">Additional Information:</label> 
+								<div class="col-sm-6">
+									<textarea class="form-control" name="additionalinfoInput" ></textarea>
+								</div>
+								<div class="col-sm-2"></div>
+							</div>
+							
+						
+							<div class="form-group row">
+								<div class="col-sm-2"></div>
+								<label class="col-sm-2 col-form-label">Have you been to the restaurant?</label> 
+								<div class="col-sm-6">
+									<div class="col-sm-1"></div>
+									<label for="beenRestaurant" class="form-check-label col-sm-1">
+										<input type="radio" class="form-check-input" name="beenRestaurant" value="NO" />No
+									</label>
+									<label for="beenRestaurant" class="form-check-label col-sm-1">
+										<input type="radio" class="form-check-input" name="beenRestaurant" value="YES" />Yes
+									</label>
+								</div>
+								<div class="col-sm-2"></div>
+							</div>
+							
+						
+							<div class="form-group row">
+								<div class="col-sm-2"></div>
+								<label class="col-sm-2 col-form-label">Best days to contact you:</label> 
+								<div class="col-sm-6">								
+								
+									<label class="form-check-label col-sm-1">
+										<input type="checkbox" class="form-check-input" name="contactDaysMonday" value="True" />M
+									</label>
+									<label class="form-check-label col-sm-1">
+										<input type="checkbox" class="form-check-input" name="contactDaysTuesday" value="True" />T
+									</label>
+									<label class="form-check-label col-sm-1">
+										<input type="checkbox" class="form-check-input" name="contactDaysWendsday" value="True" />W
+									</label>
+									<label class="form-check-label col-sm-1">
+										<input type="checkbox" class="form-check-input" name="contactDaysThursday" value="True" />Th
+									</label>
+									<label class="form-check-label col-sm-1">
+										<input type="checkbox" class="form-check-input" name="contactDaysFriday" value="True" />F
+									</label>
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<div class="col-sm-4"></div>
+								<button type="submit" class= "btn btn-primary">submit</button>
+							</div>
+					</form>	
+				
+
+				
+				
+				</article>
+			</section>
+			
+			<footer>
+				<div class="row">
+					<p class="col-sm"> 12345 Make Shift Drive, Eden Prairie, MN 55444 </p>
+				</div>
+				<div class="row">
+					<p class="col-sm"> 952-222-2222 </p>
+				</div>
+			</footer>
+			
+		</main>
+		
+		
+	</body>
+	
+</html>

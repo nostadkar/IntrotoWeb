@@ -10,32 +10,49 @@ function validateItems() {
         document.forms["luckySeven"]["startingBet"].focus();
         return false;
     }
+	
+	var gameMoney = startingBet;
 	//displaying results block and changing the button from play to play again.
    
+	var roundCounter = 1;
+	var rollCountResult = 0;
+	var maxSumResult = startingBet;
+	var rollCountAtMaxSumResult = 0;
+	
+	while (roundCounter > 0) {
+		if(gameMoney > 0){
+			var dice1 = rollDice();
+			var dice2 = rollDice();
+			
+			if(dice1 + dice2 == 7){
+				gameMoney += 4
+			}else{
+				gameMoney -= 1
+			}
+			
+			roundCounter++
+			
+			if(gameMoney > maxSumResult){
+				maxSumResult=gameMoney;
+				rollCountAtMaxSumResult=roundCounter;
+			
+			
+		}
+		
+		}else{
+			rollCountResult = roundCounter-1;
+			roundCounter=0;
+		}
+		
+	}
+	//gameover
+	document.getElementById("results").style.display = "block";
+	document.getElementById("submitButton").innerText = "Play Again";
+	document.getElementById("startingBetResult").innerText = "$ " + startingBet;
+	document.getElementById("rollCountResult").innerText = rollCountResult;
+	document.getElementById("maxSumResult").innerText = "$ " + maxSumResult;
+	document.getElementById("rollCountAtMaxSumResult").innerText = rollCountAtMaxSumResult;
    
-   
-   //setting starting bet into game money
-   var gameMoney = startingBet;
-   
-   //check that theres money to play with;
-   
-   if(gameMoney > 0){
-	   var dice1 = rollDice();
-	   var dice2 = rollDice();
-	   if(dice1 + dice2 = 7){
-		   gameMoney =
-	   }
-	   
-	   
-   }else{
-		//gameover
-		document.getElementById("results").style.display = "block";
-		document.getElementById("submitButton").innerText = "Play Again";
-		document.getElementById("startingBetResult").innerText = startingBet;
-		//document.getElementById("rollCountResult").innerText = num1 - num2;
-		//document.getElementById("multiplyResult").innerText = num1 * num2;
-		//document.getElementById("divideResult").innerText = num1 / num2;
-   }
    
    //
 
